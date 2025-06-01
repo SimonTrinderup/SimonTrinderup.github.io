@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Portfolio</title>
+    <title>Simon Trinderup - Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
             </div>
             <div class="hero-text">
                 <h1>Simon Trinderup</h1>
-                <p class="tagline">Problemsolver </p>
+                <p class="tagline">Business Development & Sales</p>
             </div>
             <div class="social-container">
                 <div class="social-links">
@@ -67,7 +67,7 @@
         <div class="skills-grid">
             <div class="skill">Business Development</div>
             <div class="skill">Sales</div>
-            <div class="skill">Onboarding</div>
+            <div class="skill">Growth</div>
             <div class="skill">Digitalization</div>
         </div>
     </section>
@@ -76,9 +76,9 @@
     <section class="goals">
         <div class="goals-content">
             <h2>Goals & Vision</h2>
-            <p>My mission is to create lasting impact on the projects I'm involved in, with growth and improvement as my main drive.</p>
+            <p>My mission is to make a meaningful, lasting impact on every project I contribute to—driven by a constant desire to grow, learn, and improve.</p>
             <div class="ambitions">
-                <p>Longterm goal: find the right path for me, with as much knowledge and know-how in my backpack as possible</p>
+                <p>In the long run, my goal is to discover the path that truly fits me, equipped with as much knowledge, experience, and insight as possible.</p>
             </div>
         </div>
     </section>
@@ -113,68 +113,36 @@
             <h2>Recommendations</h2>
             <p class="section-subtitle">What colleagues and clients say about working with me</p>
         </div>
-        <div class="recommendations-container">
-            <div class="recommendations-track">
-                <!-- Recommendation 1 -->
-                <div class="recommendation-card">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="recommendation-text">Simon demonstrated exceptional problem-solving skills and was a key player in our digital transformation project. His attention to detail and dedication were impressive.</p>
-                    <div class="recommender-info">
-                        <div class="recommender-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="recommender-details">
-                            <h4>Alex Johnson</h4>
-                            <p class="recommender-role">Project Manager, TechCorp</p>
-                        </div>
-                    </div>
+        <div class="recommendations-wrapper">
+            <button class="carousel-arrow prev-arrow" aria-label="Previous recommendation">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="recommendations-container">
+                <div class="recommendations-track">
+                    <!-- Recommendation cards will be duplicated here by JavaScript -->
                 </div>
-
-                <!-- Recommendation 2 -->
-                <div class="recommendation-card">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="recommendation-text">Working with Simon was a great experience. His ability to understand complex business needs and translate them into solutions is remarkable. Highly recommended!</p>
-                    <div class="recommender-info">
-                        <div class="recommender-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="recommender-details">
-                            <h4>Sarah Williams</h4>
-                            <p class="recommender-role">CEO, InnovateX</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recommendation 3 -->
-                <div class="recommendation-card">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="recommendation-text">Simon's technical expertise and collaborative approach made a significant impact on our team. He's a quick learner and a great team player.</p>
-                    <div class="recommender-info">
-                        <div class="recommender-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="recommender-details">
-                            <h4>Michael Chen</h4>
-                            <p class="recommender-role">CTO, Digital Solutions</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Arrows -->
-                <button class="carousel-arrow prev-arrow" aria-label="Previous recommendation">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-arrow next-arrow" aria-label="Next recommendation">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
             </div>
+            <button class="carousel-arrow next-arrow" aria-label="Next recommendation">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
+        <template id="recommendation-template">
+            <div class="recommendation-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="recommendation-text"></p>
+                <div class="recommender-info">
+                    <div class="recommender-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="recommender-details">
+                        <h4 class="recommender-name"></h4>
+                        <p class="recommender-role"></p>
+                    </div>
+                </div>
+            </div>
+        </template>
     </section>
 
     <!-- Footer -->
@@ -189,7 +157,7 @@
                 <span>View Resume</span>
             </a>
             <button class="contact-btn">Contact Me</button>
-            <p class="copyright">&copy; 2025 Your Name. All rights reserved.</p>
+            <p class="copyright">&copy; 2025 Simon Trinderup. All rights reserved.</p>
         </div>
     </footer>
 
